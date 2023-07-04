@@ -28,8 +28,7 @@ def preprocess(img, size):
     transform = transforms.Compose([
         transforms.ToPILImage(),
         transforms.Resize(size),
-        transforms.ToTensor(),
-        transforms.Normalize([0.5], [0.5]),
+        transforms.ToTensor()
     ])
     return transform(img)
 
